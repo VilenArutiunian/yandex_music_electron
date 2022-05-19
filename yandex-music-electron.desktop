@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=Yandex.Music Desktop
+GenericName=Music Player
+Icon=yandex-music
+Exec=/opt/yandex-music-electron/yandex-music-electron
+Terminal=false
+StartupWMClass=yandex music
+Categories=Audio;Music;Player;AudioVideo;

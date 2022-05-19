@@ -1,0 +1,44 @@
+{
+  "name": "yandex-music-electron",
+  "productName": "Yandex.Music Desktop",
+  "version": "1.0.0",
+  "description": "A Linux desktop web app for Yandex.Music",
+  "main": "scripts/main.js",
+  "scripts": {
+    "start": "electron --enable-accelerated-mjpeg-decode --enable-accelerated-video --ignore-gpu-blacklist --enable-native-gpu-memory-buffers --enable-gpu-rasterization .",
+    "build": "electron-builder --publish never"
+  },
+  "build": {
+    "linux": {
+      "target": [
+        "zip",
+        "AppImage",
+        "deb",
+        "apk",
+        "snap"
+      ],
+      "category": "Audio",
+      "artifactName": "${name}_${version}_linux.${ext}"
+    },
+    "snap": {
+      "plugs": [
+        "default",
+        "audio-record"
+      ]
+    },
+    "extraFiles": [
+      "${name}.desktop"
+    ]
+  },
+  "homepage": "./",
+  "keywords": [
+    "Electron",
+    "yandex-music",
+    "yamusic"
+  ],
+  "author": "Vilen Arutiunian <arutiunianvilen@gmail.com>",
+  "devDependencies": {
+    "electron": "^17.4.0",
+    "electron-builder": "^22.13.1"
+  }
+}
