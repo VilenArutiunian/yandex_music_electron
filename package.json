@@ -1,5 +1,5 @@
 {
-  "name": "yandex-music-electron",
+  "name": "yandex_music_electron",
   "productName": "Yandex.Music Desktop",
   "version": "1.0.0",
   "description": "A Linux desktop web app for Yandex.Music",
@@ -33,7 +33,7 @@
   "homepage": "./",
   "keywords": [
     "Electron",
-    "yandex-music",
+    "yandex_music",
     "yamusic"
   ],
   "author": "Vilen Arutiunian <arutiunianvilen@gmail.com>",
